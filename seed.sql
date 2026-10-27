@@ -1,0 +1,6 @@
+INSERT INTO posts (title, excerpt, content, category, author_id, author_name)
+SELECT 'The quiet art of starting again', 'A fresh start is often one small choice made differently.', 'A fresh start is often one small choice made differently. Small actions are easy to underestimate because they do not look like transformation while they are happening. But a life is mostly made of ordinary Tuesdays. If you can make one of those a little more intentional, you have already begun.', 'Life', 'inknest-demo-1', 'The InkNest Team'
+WHERE NOT EXISTS (SELECT 1 FROM posts WHERE title = 'The quiet art of starting again');
+INSERT INTO posts (title, excerpt, content, category, author_id, author_name)
+SELECT 'Build things people can feel', 'Great software is a moment where someone feels understood by the tool in their hands.', 'Great software is a moment where someone feels understood by the tool in their hands. The best products remove a small frustration so completely that people forget it was ever there. Ship the smallest useful version, listen carefully, and improve what matters. Craft is care made visible.', 'Technology', 'inknest-demo-2', 'The InkNest Team'
+WHERE NOT EXISTS (SELECT 1 FROM posts WHERE title = 'Build things people can feel');

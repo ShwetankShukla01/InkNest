@@ -1,0 +1,9 @@
+name = "InkNest — Blog & Community"
+tagline = "Ideas worth sharing."
+description = "A community-first blogging platform with publishing, comments, search, and profiles."
+category = "Community"
+tags = ["blogging", "writing", "community"]
+
+[auth]
+enabled = true
+providers = ["email"]
